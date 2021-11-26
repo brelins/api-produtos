@@ -38,7 +38,7 @@ exports.adiciona_um_produto = (req,res)=>{
 //put
 
 exports.atualiza_um_produto = (req,res)=>{
-    produto.findOneAndUpdate({_id: req.params.produtoId}, req.body, {new: true},
+    produto.findOneAndUpdate({_id: req.params.produtoId}, req.body, {new: true,},
         (err,produto)=>{
             if(err){
                 res.send(err);
