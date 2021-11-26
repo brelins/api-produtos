@@ -10,7 +10,7 @@ const produtoSchema = new Schema({
         type: String
     },
     criadoEm:{
-        type: Date, default: Date.now
+        type: Date, default: Date
     },
     atualizadoEm:{
         type: Date, default: Date.now
